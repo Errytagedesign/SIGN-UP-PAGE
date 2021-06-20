@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.525in" height="0.76in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3525 760"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:cc="http://creativecommons.org/ns#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:svg="http://www.w3.org/2000/svg"
+ xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+ xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+ inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+ sodipodi:docname="Full lockup.svg">
+ <defs>
+  <font id="FontID0" horiz-adv-x="773" font-variant="normal" style="fill-rule:nonzero" font-weight="700">
+	<font-face 
+		font-family="Montserrat">
+		<font-face-src>
+			<font-face-name name="Montserrat Bold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="S" horiz-adv-x="645" d="M550.998 484.998l69.0036 145.003c-73.0014,47.0001 -177.001,78.9981 -280.002,78.9981 -169,0 -280.002,-83.001 -280.002,-214.002 0,-247.999 368.999,-175.997 368.999,-294.999 0,-37.0004 -33.9969,-56.9998 -87.9983,-56.9998 -73.0014,0 -181.998,44.0017 -254,105.999l-70.9973 -142.999c84.0005,-68.9984 206.001,-112.001 322.999,-112.001 155.997,0 282.001,73.0014 282.001,216.001 0,252.001 -368.999,186.001 -368.999,302 0,32.0031 28.9996,47.9995 72.9962,47.9995 58.0044,0 152.005,-32.9974 226,-75.0003z"/>
+   <glyph unicode="a" horiz-adv-x="601" d="M312 548c-88.9978,0 -167.002,-20.9988 -252.001,-58.9987l49.0042 -120.001c57.9992,28.0002 116.998,43.0023 161.999,43.0023 67.9989,0 103,-30.0042 103,-81.0021l0 -6.00188 -141 0c-134.004,-1.9989 -207,-60.9976 -207,-163.998 0,-98.9974 68.9984,-169 184.997,-169 73.0014,0 128.002,24.0024 163.004,68.9984l0 -60.9976 174.997 0 0 351.998c-0.999451,123.999 -87.9983,196.001 -236.999,196.001zm-46.0006 -434.999c-46.0006,0 -73.0014,24.0024 -73.0014,60.9976 0,37.9999 25.0018,56.0003 75.0003,56.0003l106.004 0 0 -47.0001c-11.0043,-40.9982 -55.0009,-69.9978 -108.003,-69.9978z"/>
+   <glyph unicode="c" horiz-adv-x="562" d="M416.999 343.998l129.002 75.0003c-47.0001,81.0021 -132.999,128.002 -242.002,128.002 -168.001,0 -279.996,-111.001 -279.996,-279.002 0,-164.997 110.996,-274 277.998,-274 114.999,0 203.002,47.0001 246,130.001l-131.001 75.0003c-21.9983,-41.9977 -58.9987,-60.9976 -105.999,-60.9976 -64.0011,0 -107.998,51.9973 -107.998,131.001 0,77.9986 43.9966,130.995 107.998,130.995 46.0006,0 82.0016,-20.9988 105.999,-56.0003z"/>
+   <glyph unicode="k" horiz-adv-x="632" d="M420.002 0l209.999 0 -202.003 331.999 198 208.999 -201.998 0 -172.998 -182.998 0 384.002 -178.001 0 0 -742.002 178.001 0 0 147.002 54.9957 56.9998 114.005 -204.002z"/>
+   <glyph unicode="o" horiz-adv-x="638" d="M319.001 547c-178.001,0 -294.999,-110.002 -294.999,-275.999 0,-167.002 116.998,-277.003 294.999,-277.003 178.001,0 295.998,110.002 295.998,277.003 0,165.997 -117.997,275.999 -295.998,275.999zm0 -143.999c69.9978,0 116.998,-54.0014 116.998,-133.999 0,-81.0021 -47.0001,-135.004 -116.998,-135.004 -69.0036,0 -115.998,54.0014 -115.998,135.004 0,79.9975 46.9949,133.999 115.998,133.999z"/>
+   <glyph unicode="t" horiz-adv-x="436" d="M386 153.998c-26.0013,-10.9991 -48.999,-18.0005 -66.9995,-18.0005 -30.9985,-0.999451 -48.999,17.001 -48.999,56.9998l0 204.002 139.996 0 0 118.003 -139.996 0 0 149.995 -177.001 0 0 -149.995 -75.0003 0 0 -118.003 75.0003 0 0 -232.002c0,-111.995 75.9997,-173.998 180.999,-172.998 53.002,0 106.998,13.0032 146.003,36.001l-34.0021 125.998z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Montserrat";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .fil0 {fill:white}
+    .fnt0 {font-weight:bold;font-size:760.26px;font-family:'Montserrat'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1886823851920">
+   <sodipodi:namedview fit-margin-bottom="0" fit-margin-right="0" fit-margin-left="0" fit-margin-top="0" showborder="true" inkscape:pagecheckerboard="true" showgrid="false" inkscape:document-rotation="0" inkscape:current-layer="layer1" inkscape:document-units="px" inkscape:cy="29.725071" inkscape:cx="439.03976" inkscape:zoom="0.175" inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" inkscape:snap-global="false" inkscape:window-width="1344" inkscape:window-height="730" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="0"/>
+   <g id="layer1" inkscape:groupmode="layer" inkscape:label="Layer 1">
+    <g id="g842">
+     <text x="908.39" y="657.5" id="text904" class="fil0 fnt0">Stocka</text>
+     <path id="path906" class="fil0" d="M378.34 -0.12c-208.41,2.07 -376.27,171.69 -376.27,380.11 0,0 0,0 0,0 0,0 0,0.04 0,0.04 0,135.33 72.02,260.54 188.98,328.57 9.99,-8.76 18.18,-16.13 29.77,-26.1 45.36,-39 82.24,-73.21 84.04,-77.96 2.7,-7.12 -2.02,-22.35 -29.85,-96.04 -18.19,-48.17 -33.06,-90.81 -33.04,-94.81 0.07,-9.59 3.24,-11.98 128.44,-95.7 122.35,-81.81 117.35,-76.15 96.78,-109.48 -8.66,-14.03 -11.22,-20.92 -8.76,-23.39 2.46,-2.46 25.41,-1.49 77.88,3.37 40.93,3.8 76.56,6.91 79.22,6.91 2.65,0 6.36,2.82 8.2,6.27 0.5,0.93 0.72,2.26 0.63,4.2 -0.41,8.37 -6.94,27.93 -24.13,73.98 -14.76,39.56 -28.17,73.72 -29.81,75.88 -4.76,6.26 -10.44,1.94 -20.75,-15.7 -11.36,-19.46 -20.69,-23.22 -35.67,-14.37 -5.65,3.34 -44.7,28.82 -86.79,56.61 -54.47,35.96 -77.06,52.72 -78.4,58.09 -1.26,5.04 9.2,37 31.44,95.89 22.78,60.31 32.73,90.78 31.41,96.07 -1.79,7.11 -97.33,89.15 -131.49,113.81 33.16,9.24 67.59,13.97 102.02,13.97 -0,0 -0,0 -0,0 209.91,0 380.13,-170.23 380.13,-380.13 0,0 0,0 0,0 0,0 0,0 0,0 0,-209.91 -170.23,-380.13 -380.13,-380.13 0,0 0,0 0,0 -0.58,-0 -1.33,-0 -1.93,-0 -0.6,0 -1.35,0 -1.95,0l0.02 0.01z" inkscape:export-ydpi="96" inkscape:export-xdpi="96" sodipodi:role="line"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

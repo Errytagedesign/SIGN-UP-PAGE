@@ -1,0 +1,229 @@
+/* ==========General Layout============ */
+
+:root {
+
+    --main-green: #1b8381; 
+    --white: #fff;
+    --font: "Roboto", sans-serif;
+    --black: #000;
+    --grey: #a7a5a5;
+    --success: #056905;
+    --error: #e40606;
+
+}
+
+body {
+
+    overflow-x: hidden;
+}
+
+aside {
+
+    background-color: var(--main-green);
+     
+    
+}
+
+
+/* =========Back arrow color===== */
+
+.arrow{
+
+    color: var(--white);
+}
+
+
+/* =========Password reveal icon===== */
+
+
+
+
+
+/* ====================================
+
+        FORM & INPUTS
+   ==================================== */
+
+   .form-container {
+
+    position: relative;
+   }
+
+   /* =========initail display property to hide the error message ===== */
+
+ .form-container small{
+
+    visibility: hidden;
+}
+
+
+ /* ========= Position property for them icons ===== */
+  .form-container i {
+
+    position: absolute;
+    top: 65px;
+    right: 90px;
+    color: var(--grey);
+    visibility: hidden;
+}
+
+
+   /* ====set border color for input when input is corrects */
+
+   .form-container.success input{
+
+    border-color: var(--success);
+   }
+
+
+   /* ====set border color for input when input its incorrects */
+
+   .form-container.error input{
+
+    border-color: var(--error);
+   }
+
+
+ /* ====set color for checkmark icon when input is corrects */
+
+ .form-container.success i.fa-check-circle{
+
+        color: var(--success);
+        visibility: visible;
+    }
+
+
+   /* ====set color for exclamation icon when input its incorrects */
+
+   .form-container.error i.fa-exclamation-circle{
+
+        color: var(--error);
+        visibility: visible;
+   }
+
+   /* ====set color for error message */
+   .form-container.error small {
+
+    color: var(--error);
+    visibility: visible;
+}
+
+
+.form-container i.fa-eye-slash{
+
+    visibility: visible;
+    right: 40px;
+}
+  
+
+/* =========Input margin bottoms ===== */
+input {
+
+    margin-bottom: 1.5rem;
+}
+
+
+/* ========= submit button styles ===== */
+
+.btn {
+
+    background-color: var(--main-green);
+    box-shadow:  1px 7px 3px  rgb(180, 180, 180) ;
+    margin: 3em 0;
+    text-align: center;
+
+}
+
+
+
+
+/* =========Footer logo ===== */
+
+.stocka{
+
+    
+    margin: 6em 0;
+    
+}
+
+/* .stocka1 {
+
+    margin-top: 20em;
+} */
+
+
+
+/* ===========Typography ============ */
+
+h1, 
+h2,
+h3 {
+
+    color: var(--white);
+    font-family: var(--font);
+    font-weight: 500;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    
+
+}
+
+
+h1 {
+
+    font-size: 3rem;
+}
+
+
+h6{
+
+    color: var(--grey);
+    font-weight: 400;
+    
+}
+
+
+p {
+    
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+
+.sign-up {
+
+    color: var(--black);
+    font-weight: 500;
+}
+
+label {
+
+    margin: 1em 0;
+}
+
+
+a {
+
+    font-family: var(--font);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--grey);
+
+}
+
+a:hover {
+
+    color: var(--main-green);
+}
+
+h6 a{
+
+    font-weight: 700;
+    color: var(--main-green);
+}
+
+#sign-up{
+
+    color: var(--grey);
+}
