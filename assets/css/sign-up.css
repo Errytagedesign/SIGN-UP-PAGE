@@ -28,7 +28,7 @@ aside {
 
 /* =========Back arrow color===== */
 
-.arrow{
+.back-arrow-icon{
 
     color: var(--white);
     font-size: 1.5rem;
@@ -127,6 +127,7 @@ aside {
     box-shadow:  1px 7px 3px  rgb(180, 180, 180) ;
     margin: 1em 0;
     text-align: center;
+    font-family: var(--font);
 
 }
 
@@ -145,6 +146,8 @@ aside {
 .stocka1 {
 
     margin: 9em 0;
+    font-family: var(--font);
+    font-weight: 200;
 }
 
 
@@ -184,6 +187,7 @@ p {
     color: var(--white);
     font-size: 1.5rem;
     margin-bottom: .5em;
+    font-family: var(--font);
 }
 
 /* =====Property settings for sign up text===== */
@@ -198,12 +202,15 @@ p {
 .sign-up p{
 
     color: var(--grey);
+    font-family: var(--font);
+    
 }
 
 
 label {
 
     margin: 1em 0;
+    font-family: var(--font);
 }
 
 
