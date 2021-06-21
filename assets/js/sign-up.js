@@ -16,6 +16,16 @@ form.addEventListener('submit', function(e) {
     // declare checkinput function
     checkInput();
 
+    if(firstName.value === firstName.value && lastName.value === lastName.value
+        && PhoneNumber.value === PhoneNumber.value && email.value === email.value 
+        && createPassword.value === createPassword.value && confirmPassword.value === confirmPassword.value){
+
+        alert("Sign up Succesful")
+    } else {
+
+        alert("sign up unsuccessful")
+    }
+
 });
 
 
@@ -64,6 +74,10 @@ function checkInput() {
         if(password1Value === ''){
 
             setErrorFor(password1, 'Password cannot be blank');
+        } 
+        else if(password1Value.length <6 ){
+
+            setErrorFor(password1, 'Password is less than 8 characters')
         } else {
 
             setSuccessFor(password1);
@@ -77,10 +91,12 @@ function checkInput() {
 
             setErrorFor(password2, 'Password does not match')
             
-        }  else {
+        } else {
 
             setSuccessFor(password2);
         }
+
+        
         
     };
 
