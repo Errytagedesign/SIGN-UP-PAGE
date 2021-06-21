@@ -153,14 +153,15 @@
                             after clicking the submit button -->
                             <div>
                                 <label> Create Password </label>
-                                <input type="password" class="form-control rounded-pill" placeholder="Create password" id="password1"> 
+                                <input type="password" class="form-control rounded-pill password" placeholder="Create password" id="password1"> 
                                
                                 <!-- Check mark & Error icon -->
                                 <i class="fas fa-check-circle"></i>
                                 <i class="fas fa-exclamation-circle"></i>
                                 
                                 <!-- Reveal password icon-->
-                                <i class="far fa-eye-slash"></i> 
+                                <i class="bi bi-eye-slash toggle-pass"></i>
+                                
 
                                <!-- Erro messages -->
                               <small>Error message </small>  
@@ -175,15 +176,16 @@
                             after clicking the submit button -->
                             <div>
                                 <label> Confirm Password </label>
-                                <input type="password" class="form-control rounded-pill" placeholder="Confirm Password" id="password2"> 
+                                <input type="password" class="form-control rounded-pill password" placeholder="Confirm Password" id="password2"> 
                                 
                                 <!-- Check mark & Error icon -->
                                 <i class="fas fa-check-circle"></i>
                                 <i class="fas fa-exclamation-circle"></i>
                                  
                                 <!-- Reveal password icon-->
-                                <i class="far fa-eye-slash" id="eye"></i> 
-
+                                <i class="bi bi-eye-slash toggle-pass"></i>
+                                
+                                
                                  <!-- Erro messages -->
                                 <small>Error message </small>  
                                 
@@ -197,7 +199,7 @@
                     <div  class="text-center text-lg-start"> 
                                 
                         <label> 
-                            <input type="checkbox"> I agree to all the <a href="#">Terms</a> & <a href="#">Privacy Policy </a>
+                            <input type="checkbox" required> I agree to all the <a href="#">Terms</a> & <a href="#">Privacy Policy </a>
                         </label>
 
                         <button type="submit" class="btn col-lg-8 btn-lg col-12 border-0 rounded-pill" id="submitbtn"> Register </button> 

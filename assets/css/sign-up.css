@@ -112,10 +112,12 @@ aside {
 }
 
 
-.form-container i.fa-eye-slash{
+.form-container i.bi-eye-slash{
 
     visibility: visible;
     right: 15px;
+    position: absolute;
+    right: 42px;
 }
   
 
