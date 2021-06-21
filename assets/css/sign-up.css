@@ -128,7 +128,15 @@ aside {
     margin: 1em 0;
     text-align: center;
     font-family: var(--font);
+    color: var(--white);
 
+}
+
+.btn:hover{
+
+    background-color: #146866;
+    color: var(--white);
+    
 }
 
 
