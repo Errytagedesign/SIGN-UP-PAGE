@@ -8,6 +8,7 @@ const createPassword = document.getElementById("password1");
 const confirmPassword = document.getElementById("password2");
 
 
+
 // clear default action of submit form
 form.addEventListener('submit', function(e) {
 
@@ -16,17 +17,8 @@ form.addEventListener('submit', function(e) {
     // declare checkinput function
     checkInput();
 
-    if(firstName.value === firstName.value && lastName.value === lastName.value
-        && PhoneNumber.value === PhoneNumber.value && email.value === email.value 
-        && createPassword.value === createPassword.value && confirmPassword.value === confirmPassword.value){
-
-        alert("Sign up Succesful")
-    } else {
-
-        alert("sign up unsuccessful")
-    }
-
 });
+
 
 
 // declaring checkinput function
