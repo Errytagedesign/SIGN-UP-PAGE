@@ -19,10 +19,11 @@ body {
 
 aside {
 
-    background-color: var(--main-green);
-     
+    background-color: var(--main-green);     
     
 }
+
+
 
 
 /* =========Back arrow color===== */
@@ -30,6 +31,8 @@ aside {
 .arrow{
 
     color: var(--white);
+    font-size: 1.5rem;
+    margin: 2em 0 1em 0;
 }
 
 
@@ -44,14 +47,14 @@ aside {
         FORM & INPUTS
    ==================================== */
 
-   .form-container {
+.form-container {
 
     position: relative;
-   }
+}
 
-   /* =========initail display property to hide the error message ===== */
+/* =========initail display property to hide the error message ===== */
 
- .form-container small{
+.form-container small{
 
     visibility: hidden;
 }
@@ -62,7 +65,7 @@ aside {
 
     position: absolute;
     top: 65px;
-    right: 90px;
+    right: 40px;
     color: var(--grey);
     visibility: hidden;
 }
@@ -112,16 +115,9 @@ aside {
 .form-container i.fa-eye-slash{
 
     visibility: visible;
-    right: 40px;
+    right: 15px;
 }
   
-
-/* =========Input margin bottoms ===== */
-input {
-
-    margin-bottom: 1.5rem;
-}
-
 
 /* ========= submit button styles ===== */
 
@@ -129,7 +125,7 @@ input {
 
     background-color: var(--main-green);
     box-shadow:  1px 7px 3px  rgb(180, 180, 180) ;
-    margin: 3em 0;
+    margin: 1em 0;
     text-align: center;
 
 }
@@ -139,17 +135,17 @@ input {
 
 /* =========Footer logo ===== */
 
-.stocka{
+/* .stocka{
 
     
-    margin: 6em 0;
+    margin: 3em 0;
     
-}
-
-/* .stocka1 {
-
-    margin-top: 20em;
 } */
+
+.stocka1 {
+
+    margin: 9em 0;
+}
 
 
 
@@ -190,12 +186,20 @@ p {
     margin-bottom: 1em;
 }
 
-
-.sign-up {
+/* =====Property settings for sign up text===== */
+.sign-up h2 {
 
     color: var(--black);
     font-weight: 500;
+    margin-top: 1em;
 }
+
+/* =====Property settings for sign up paragraphy ===== */
+.sign-up p{
+
+    color: var(--grey);
+}
+
 
 label {
 
@@ -223,7 +227,3 @@ h6 a{
     color: var(--main-green);
 }
 
-#sign-up{
-
-    color: var(--grey);
-}

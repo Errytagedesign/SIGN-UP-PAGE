@@ -35,12 +35,15 @@
                <p class=" text-center text-lg-start">To continue trading, please log into 
                 your account and access your 
                 dashboard.</p>
-        
-               <!-- <div class="stocka1" > 
-                <img src="assets/images/Stocka Logo/Full lockup - white.svg" alt="" class="img-fluid mx-lg-0 d-none d-md-block" width="200px"> 
-                </div> -->
-           
+              
+                    <div class="text-center text-lg-start">
+                    <div class="stocka1" > 
+                    <img src="assets/images/Stocka Logo/Full lockup - white.svg" alt="" class="mx-auto mx-lg-0 d-md-block" width="200px"> 
+                    </div>
+                    </div>
             </div>
+
+            
 
 
         </aside>
@@ -49,8 +52,8 @@
         <main class="col-sm-8 col-lg-7">
             <div class="container">
 
-                <div class="text-center text-lg-start">
-                      <h2 class="sign-up">Sign Up </h2>
+                <div class="text-center text-lg-start sign-up">
+                    <h2 class="">Sign Up </h2>
                     <p  id="sign-up">Create an account to begin trading</p> 
 
 
@@ -62,69 +65,90 @@
 
                     <!-- First name container -->
                     <div class="col-lg-6 form-container">
-
-                        <label class=""> First Name </label>
-                        <input type="text" class="form-control rounded-pill " placeholder="Your First name" id="firstname">
                         
-                        <!-- Check mark & Error icon -->
-                         <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
+                        <!-- Putting the label, input and icons in a div box solve the problem of the input expanding on desktop 
+                            after clicking the submit button -->
+                        <div> 
+                            <label class=""> First Name </label>
+                            <input type="text" class="col-lg-6 form-control rounded-pill " placeholder="Your First name" id="firstname">
+                       
+                            <!-- Check mark & Error icon -->
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
 
-                        <!-- Erro messages -->
-                        <small>Error message </small>
+                            <!-- Erro messages -->
+                            <small>Error message </small> 
+                        </div>
 
                     </div>
 
                       <!-- Last name container -->
                     <div class="col-lg-6 form-container">                           
                         
+                        <!-- Putting the label, input and icons in a div box solve the problem of the input expanding on desktop 
+                            after clicking the submit button -->
+                      <div>  
                         <label> Last Name </label>
-                        <input type="text" class="form-control rounded-pill " placeholder="Your Last name" id="lastname">
+                        <input type="text" class="col-lg-6 form-control rounded-pill " placeholder="Your Last name" id="lastname">
                         
                         <!-- Check mark & Error icon -->
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
 
                         <!-- Erro messages -->
-                        <small>Error message </small>
+                        <small>Error message </small> 
+                    </div>
 
                     </div>
                     
                     
                         <!-- Phone number container -->
                         <div class="col-sm-12 col-lg-6 form-container">                             
-                            
-                            <label> Phone number </label>
-                            <input type="number" class="form-control rounded-pill" placeholder="Your Phone Number" id="number">     
-                            
-                            <!-- Check mark & Error icon -->
-                            <i class="fas fa-check-circle"></i>
-                            <i class="fas fa-exclamation-circle"></i>
+                           
+                            <!-- Putting the label, input and icons in a div box solve the problem of the input expanding on desktop 
+                            after clicking the submit button -->
+                            <div>
 
-                            <!-- Erro messages -->
-                            <small>Error message </small>
+                                <label> Phone number </label>
+                                <input type="number" class="form-control rounded-pill" placeholder="Your Phone Number" id="number">     
+                                
+                                <!-- Check mark & Error icon -->
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+
+                                <!-- Erro messages -->
+                                <small>Error message </small>
+                            </div>
                                                    
                         </div>
 
                           <!-- Email container -->
                         <div class="col-lg-6 form-container">
                            
-                            <label> Email </label>
-                            <input type="email" class="form-control rounded-pill" placeholder="example@mail.com" id="email">
-                             
-                            <!-- Check mark & Error icon -->
-                            <i class="fas fa-check-circle"></i>
-                            <i class="fas fa-exclamation-circle"></i>
+                            <!-- Putting the label, input and icons in a div box solve the problem of the input expanding on desktop 
+                            after clicking the submit button -->
+                            <div>
 
-                            <!-- Erro messages -->
-                            <small>Error message </small>
+                                <label> Email </label>
+                                <input type="email" class="form-control rounded-pill" placeholder="example@mail.com" id="email">
+                                
+                                <!-- Check mark & Error icon -->
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+
+                                <!-- Erro messages -->
+                                <small>Error message </small>
+                            </div>
 
                         </div>
                     
                     
                         <!-- Create password container -->
                         <div class="col-lg-6 form-container">                             
-                         
+                           
+                           <!-- Putting the label, input and icons in a div box solve the problem of the input expanding on desktop 
+                            after clicking the submit button -->
+                            <div>
                                 <label> Create Password </label>
                                 <input type="password" class="form-control rounded-pill" placeholder="Create password" id="password1"> 
                                
@@ -137,11 +161,16 @@
 
                                <!-- Erro messages -->
                               <small>Error message </small>  
+
+                            </div>
                         </div>
 
                         <!-- Confirm password container -->
                         <div class="col-lg-6 form-container">                            
                             
+                            <!-- Putting the label, input and icons in a div box solve the problem of the input expanding on desktop 
+                            after clicking the submit button -->
+                            <div>
                                 <label> Confirm Password </label>
                                 <input type="password" class="form-control rounded-pill" placeholder="Confirm Password" id="password2"> 
                                 
@@ -153,7 +182,9 @@
                                 <i class="far fa-eye-slash" id="eye"></i> 
 
                                  <!-- Erro messages -->
-                                <small>Error message </small>                              
+                                <small>Error message </small>  
+                                
+                            </div>
 
                         </div>
                         
@@ -179,12 +210,12 @@
 
 
                  <!-- Footer Logo -->
-                        <div  class="text-center text-lg-start">
+                        <!-- <div  class="text-center text-lg-start">
                             <div class="stocka" > 
                                 <img src="assets/images/Stocka Logo/Full lockup.svg" alt="" class=" img-fluid mx-auto mx-lg-0 d-block" width="200px"> 
                             </div>
 
-                        </div>
+                        </div> -->
                 
                 
                
