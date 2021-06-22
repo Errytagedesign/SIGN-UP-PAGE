@@ -19,7 +19,7 @@ body {
 
 aside {
 
-    background-color: var(--main-green);     
+    background-color: var(--main-green);    
     
 }
 
@@ -36,7 +36,7 @@ aside {
 }
 
 
-/* =========Password reveal icon===== */
+
 
 
 
@@ -155,7 +155,6 @@ aside {
 
 .stocka1 {
 
-    margin: 9em 0;
     font-family: var(--font);
     font-weight: 200;
 }
@@ -171,8 +170,7 @@ h3 {
     color: var(--white);
     font-family: var(--font);
     font-weight: 500;
-    margin-top: 3em;
-    margin-bottom: 1em;
+    
     
 
 }
@@ -195,7 +193,7 @@ h6{
 p {
     
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: .5em;
     font-family: var(--font);
 }
@@ -205,7 +203,7 @@ p {
 
     color: var(--black);
     font-weight: 500;
-    margin-top: 1em;
+    
 }
 
 /* =====Property settings for sign up paragraphy ===== */
@@ -244,3 +242,22 @@ h6 a{
     color: var(--main-green);
 }
 
+@media (min-width: 767px) {
+
+
+
+
+    aside h1 {
+
+        margin-top: 3em;
+    }
+
+   
+    
+    .stocka1{
+
+        margin-top: 6em;
+        padding-bottom: 13em;
+        
+    }
+}

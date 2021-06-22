@@ -28,20 +28,18 @@
 
     <div class="row">
 
-        <aside class="col-sm-4 col-lg-5 h-100">
+        <aside class="col-lg-5 col-md-12 ps-5 pe-5 pb-5">
 
            <div class="container"> 
                <div class="back-arrow-icon">
                 <i class="bi bi-arrow-left"></i>
                 </div>
-               <h1 class="text-start">Welcome to Stocka </h1> 
-               <p class="text-start">To continue trading, please log into 
-                your account and access your 
-                dashboard.</p>
+               <h1 class="welcome text-center text-lg-start">Welcome to Stocka </h1> 
+               <p class="text-center text-lg-start mb-5 mt-3">Create an account now to access all features and begin trading.</p>
               
-                    <div class="text-center text-lg-start">
-                    <div class="stocka1" > 
-                    <img src="assets/images/Stocka Logo/Full lockup - white.svg" alt="" class="mx-lg-0 d-md-block" width="200px"> 
+                    <div>
+                    <div class="stocka1 text-center mb-2 pt-2 text-lg-start" > 
+                    <img src="assets/images/Stocka Logo/Full lockup - white.svg" alt="" class="mx-auto mx-lg-0" width="200px"> 
                     </div>
                     </div>
             </div>
@@ -52,12 +50,12 @@
         </aside>
 
 
-        <main class="col-sm-8 col-lg-7">
+        <main class="col-lg-6 col-md-12 ms-lg-4 me-3 ps-lg-3 pe-3">
             <div class="container">
 
-                <div class="text-start sign-up">
+                <div class="text-start mt-5 pt-5 sign-up">
                     <h2 class="">Sign Up </h2>
-                    <p class="d-none d-lg-block">Create an account to begin trading</p> 
+                    <p class="d-none d-lg-block mt-3">Create an account to begin trading</p> 
 
 
                 </div>
@@ -113,7 +111,7 @@
                             <div>
 
                                 <label> Phone number </label>
-                                <input type="number" class="form-control rounded-pill" placeholder="Your Phone Number" id="number">     
+                                <input type="tel" class="form-control rounded-pill" placeholder="Your Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="number">     
                                 
                                 <!-- Check mark & Error icon -->
                                 <i class="fas fa-check-circle"></i>
@@ -196,16 +194,16 @@
                     
                     <!-- Checkbox and submit button container -->
 
-                    <div  class="text-center text-lg-start"> 
+                    <div  class="text-center"> 
                                 
                         <label> 
                             <input type="checkbox" required> I agree to all the <a href="#">Terms</a> & <a href="#">Privacy Policy </a>
                         </label>
 
-                        <button type="submit" class="btn col-lg-8 btn-lg col-12 border-0 rounded-pill" id="submitbtn"> Register </button> 
+                        <button type="submit" class="btn col-lg-8 btn-lg col-12 border-0 rounded-pill mb-5" id="submitbtn"> Register </button> 
                              
 
-                        <h6>Already Have an Account? <a href="#">Log in </a> </h6>
+                        <h6>Already Have an Account? <a href="sign-in.html">Log in </a> </h6>
 
 
                     </div>   
