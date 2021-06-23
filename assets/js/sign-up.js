@@ -4,28 +4,36 @@ const firstName = document.getElementById("firstname");
 const lastName = document.getElementById("lastname");
 const PhoneNumber = document.getElementById("number");
 const email = document.getElementById("email");
-const createPassword = document.getElementById("#password1");
-const confirmPassword = document.getElementById("password2");
-
+const createPassword = document.querySelector("#password1");
+const confirmPassword = document.querySelector("#password2");
+const togglePassword = document.querySelector('.togglePassword');
 
 
 
 // Password reveal
 
-let eye = document.querySelector('.toggle-pass');
-let pass = document.querySelector('#password1');
 
-eye.addEventListener('click', () => {
+// let password = document.querySelector('#password1');
+
+togglePassword.addEventListener('click', (e) => {
     
-    if (eye.classList.contains('bi-eye-slash')) {
-      eye.classList.remove('bi-eye-slash');
-      eye.classList.add('bi-eye');
-      pass.type = 'text';
-    } else if (eye.classList.contains('bi-eye')) {
-      pass.type = 'password';
-      eye.classList.remove('bi-eye');
-      eye.classList.add('bi-eye-slash');
-    }
+
+     // toggle the type attribute for create password
+     const type = createPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+     createPassword.setAttribute('type', type);
+        // toggle the eye / eye slash icon
+        this.classList.toggle('bi-eye');
+  });
+  
+
+  togglePassword.addEventListener('click', (e) => {
+    
+
+     // toggle the type attribute for create password
+     const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+     confirmPassword.setAttribute('type', type);
+        // toggle the eye / eye slash icon
+        this.classList.toggle('bi-eye');
   });
   
 

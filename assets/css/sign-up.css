@@ -12,7 +12,7 @@
 
 }
 
-body {
+body, main {
 
     overflow-x: hidden;
 }
@@ -117,7 +117,9 @@ aside {
     visibility: visible;
     right: 15px;
     position: absolute;
-    right: 42px;
+    right: 18px;
+    top: 63px;
+    color: black;
 }
   
 
