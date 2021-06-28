@@ -5,10 +5,12 @@ const lastName = document.getElementById("lastname");
 const PhoneNumber = document.getElementById("phonenumber");
 const email = document.getElementById("email");
 const createPassword = document.querySelector("#password");
-const confirmPassword = document.querySelector("#confirmPassword");
+const conPassword = document.querySelector("#confirmPassword");
 const togglePassword = document.querySelector('.togglePassword');
 const btn = document.getElementById('submitbtn');
  
+
+btn.disabled = true;
 
 
 // Password reveal
@@ -28,8 +30,8 @@ togglePassword.addEventListener('click', (e) => {
 
      // toggle the type attribute for confirm password
 
-     const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
-     confirmPassword.setAttribute('type', type);
+     const type = conPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+     conPassword.setAttribute('type', type);
         // toggle the eye / eye slash icon
         this.classList.toggle('bi-eye');
   });
@@ -39,16 +41,16 @@ togglePassword.addEventListener('click', (e) => {
   
  
 
-// clear default action of submit form
-// form.addEventListener('submit', async function(e) {
-
-//     e.preventDefault(); 
-
-  
-
-// });
+// clear default action of submit form  
 
 
+form.addEventListener('input', async function(e) {
+
+    e.preventDefault();
+    checkInput(form.value);
+    disabledBtn();    
+
+});
 
 
 // declaring checkinput function
@@ -60,12 +62,16 @@ togglePassword.addEventListener('click', (e) => {
         const phoneNumberValue  = phonenumber.value
         const emailValue = email.value
         const passwordValue = password.value
-        const confirmPasswordValue = confirmPassword.value
+        const conPasswordValue = confirmPassword.value
+
+        
+        
 
         if(firstnameValue === ''){
 
-
             await setErrorFor(firstname, 'Name cannot be blank');
+
+            
         } else {
 
             await setSuccessFor(firstname);
@@ -123,13 +129,13 @@ togglePassword.addEventListener('click', (e) => {
 
         }
 
-        if(confirmPasswordValue === ''){
+        if(conPasswordValue === ''){
 
 
-         await setErrorFor(comfirmPassword, 'Password cannot be blank');
+         await setErrorFor(confirmPassword, 'Password cannot be blank')
 
 
-        } else if(passwordValue < confirmPasswordValue || passwordValue !== confirmPasswordValue){
+        } else if(passwordValue < conPasswordValue || passwordValue !== conPasswordValue){
 
 
          await setErrorFor(confirmPassword, 'Password does not match')
@@ -140,8 +146,10 @@ togglePassword.addEventListener('click', (e) => {
         } 
 
         
+        
     };
 
+   
 
     // declaring input and sucess or error message function
 
@@ -153,21 +161,34 @@ togglePassword.addEventListener('click', (e) => {
             // add error message
             formContainer.className = 'form-container error';
             small.innerText = message;  
+                
+          
         };
 
 
     function setSuccessFor(input){
-
             const formContainer = input.parentElement;
-            formContainer.className = 'form-container success'
-        }
+            formContainer.className = 'form-container success' 
+                     
+        };
 
+
+      function disabledBtn(){
+
+            btn.disabled = true;
+
+            if( setErrorFor && setSuccessFor)
+            btn.disabled = false;
+        }
+      
+        
+    
 
 btn.addEventListener("click", async (e) => {
-    // submit();
+    
     e.preventDefault();
       // declare checkinput function
-      checkInput();
+     
 
     let formData = {};
     formData.firstname =firstname.value;
@@ -176,6 +197,7 @@ btn.addEventListener("click", async (e) => {
     formData.phone = phonenumber.value;
     formData.password = password.value;
 
+    
     console.log(formData)
 
 
@@ -187,7 +209,9 @@ btn.addEventListener("click", async (e) => {
         data: formData        
             
         
-    }) .then( (response)  => {
+    }) 
+    
+    .then((response)  => {       
 
         Swal.fire(
             'Congratulations!!!',
@@ -201,9 +225,11 @@ btn.addEventListener("click", async (e) => {
 
     .catch((error) =>{
 
-        Swal.fire('Oops...', 'User already registered')
+
+        Swal.fire('Oops...', error.message, 'error')
         // console.log(error)
     })
+
 
 
   });
@@ -242,41 +268,3 @@ btn.addEventListener("click", async (e) => {
 
 // };
 
-//   });
-
-  
-// const submit = async (req, res) =>{
-
-//     const query = "https://stocka-demo.herokuapp.com/api/v1/auth/register"
-//     const formData ={};  
-//     formData.firstname = document.querySelector('#firstname').value;
-//     formData.lastname = document.querySelector('#lastname').value;
-//     formData.email = document.querySelector('#email').value;
-//     formData.phone = document.querySelector('#phone').value;
-//     formData.password = document.querySelector('#password').value;
-  
-
-    // console.log(formData)
-
-    
-    // await axios
-    // .post(query, formData)
-    // .then((response) => {
-    //   console.log("list webhook", response.data);
-
-    //   Swal.fire('Congratulations', 'Log in successful', 'success')
-    // })
-    // .catch((error) => {
-    //   // console.log(error);
-    //   Swal.fire('Uh oh!', 'Something went wrong!', 'error')
-    //   res.status(500).json({
-    //     error: error.message,
-    //   });
-    // });
-
-   
-
-// };
-
-
-   
