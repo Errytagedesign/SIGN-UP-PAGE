@@ -62,7 +62,7 @@
 
 
                 <!-- Signup form -->
-                <form class="row" id="form">
+                <form action="submit" class="row" id="form">
 
                     <!-- First name container -->
                     <div class="col-lg-6  form-container">
@@ -71,7 +71,7 @@
                             after clicking the submit button -->
                         <div> 
                             <label class=""> First Name </label>
-                            <input type="text" class="col-lg-6 form-control rounded-pill " placeholder="Your First name" id="firstname">
+                            <input type="text" name="firstname" class="col-lg-6 form-control rounded-pill " placeholder="Your First name" id="firstname">
                        
                             <!-- Check mark & Error icon -->
                             <i class="fas fa-check-circle"></i>
@@ -90,7 +90,7 @@
                             after clicking the submit button -->
                       <div>  
                         <label> Last Name </label>
-                        <input type="text" class="col-lg-6 form-control rounded-pill " placeholder="Your Last name" id="lastname">
+                        <input type="text" name="lastname" class="col-lg-6 form-control rounded-pill"  placeholder="Your Last name" id="lastname">
                         
                         <!-- Check mark & Error icon -->
                         <i class="fas fa-check-circle"></i>
@@ -111,7 +111,8 @@
                             <div>
 
                                 <label> Phone number </label>
-                                <input type="tel" class="form-control rounded-pill" placeholder="Your Phone Number" id="number">     
+                                <input type="tel" name="phone" class="form-control rounded-pill" placeholder="Your Phone Number" id="phonenumber">     
+
                                 
                                 <!-- Check mark & Error icon -->
                                 <i class="fas fa-check-circle"></i>
@@ -131,7 +132,7 @@
                             <div>
 
                                 <label> Email </label>
-                                <input type="email" class="form-control rounded-pill" placeholder="example@mail.com" id="email">
+                                <input type="email" name="email" class="form-control rounded-pill" placeholder="example@mail.com" id="email">
                                 
                                 <!-- Check mark & Error icon -->
                                 <i class="fas fa-check-circle"></i>
@@ -151,7 +152,7 @@
                             after clicking the submit button -->
                             <div>
                                 <label> Create Password </label>
-                                <input type="password" class="form-control rounded-pill password" placeholder="Create password" id="password1"> 
+                                <input type="password" name="password" class="form-control rounded-pill password" placeholder="Create password" id="password"> 
                                
                                 <!-- Check mark & Error icon -->
                                 <i class="fas fa-check-circle"></i>
@@ -174,7 +175,7 @@
                             after clicking the submit button -->
                             <div>
                                 <label> Confirm Password </label>
-                                <input type="password" class="form-control rounded-pill password" placeholder="Confirm Password" id="password2"> 
+                                <input type="password" name="password" class="form-control rounded-pill password" placeholder="Confirm Password" id="confirmPassword"> 
                                 
                                 <!-- Check mark & Error icon -->
                                 <i class="fas fa-check-circle"></i>
@@ -200,7 +201,7 @@
                             <input type="checkbox" required> I agree to all the <a href="#">Terms</a> & <a href="#">Privacy Policy </a>
                         </label>
 
-                        <button type="submit" class="btn col-lg-8 btn-lg col-12 border-0 rounded-pill mb-5" id="submitbtn"> Register </button> 
+                        <input type="submit" value="Register" class="btn col-lg-8 btn-lg col-12 border-0 rounded-pill mb-5" id="submitbtn"> 
                              
 
                         <h6>Already Have an Account? <a href="sign-in.html">Log in </a> </h6>
@@ -215,7 +216,7 @@
                  <!-- Footer Logo -->
                         <!-- <div  class="text-center text-lg-start">
                             <div class="stocka" > 
-                                <img src="assets/images/Stocka Logo/Full lockup.svg" alt="" class=" img-fluid mx-auto mx-lg-0 d-block" width="200px"> 
+                                <img src="assets/images/Stocka Logo/Stocka Full lockup.svg" alt="" class=" img-fluid mx-auto mx-lg-0 d-block" width="200px"> 
                             </div>
 
                         </div> -->
@@ -232,9 +233,14 @@
 
 
 
+    <!-- =====AXIOS SCRIPT==== -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+    <!-- =====SIGNUP SCRIPT====-->
+    <script src="assets/js/sign-up.js"></script>  
 
-  <script src="assets/js/sign-up.js"></script>  
+    <!-- ======SWEET ALERT SCRIPT==== -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
 </body>
 </html>
