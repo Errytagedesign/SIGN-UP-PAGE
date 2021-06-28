@@ -206,7 +206,6 @@ btn.addEventListener("click", async (e) => {
     })
 
 
-
   });
 
   
@@ -243,3 +242,41 @@ btn.addEventListener("click", async (e) => {
 
 // };
 
+//   });
+
+  
+// const submit = async (req, res) =>{
+
+//     const query = "https://stocka-demo.herokuapp.com/api/v1/auth/register"
+//     const formData ={};  
+//     formData.firstname = document.querySelector('#firstname').value;
+//     formData.lastname = document.querySelector('#lastname').value;
+//     formData.email = document.querySelector('#email').value;
+//     formData.phone = document.querySelector('#phone').value;
+//     formData.password = document.querySelector('#password').value;
+  
+
+    // console.log(formData)
+
+    
+    // await axios
+    // .post(query, formData)
+    // .then((response) => {
+    //   console.log("list webhook", response.data);
+
+    //   Swal.fire('Congratulations', 'Log in successful', 'success')
+    // })
+    // .catch((error) => {
+    //   // console.log(error);
+    //   Swal.fire('Uh oh!', 'Something went wrong!', 'error')
+    //   res.status(500).json({
+    //     error: error.message,
+    //   });
+    // });
+
+   
+
+// };
+
+
+   
