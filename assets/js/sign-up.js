@@ -1,20 +1,17 @@
 // Declare all variables
-const form = document.getElementById("form")
+const form = document.querySelector("#form")
 const firstName = document.getElementById("firstname");
 const lastName = document.getElementById("lastname");
-const PhoneNumber = document.getElementById("number");
+const PhoneNumber = document.getElementById("phonenumber");
 const email = document.getElementById("email");
-const createPassword = document.querySelector("#password1");
-const confirmPassword = document.querySelector("#password2");
+const createPassword = document.querySelector("#password");
+const confirmPassword = document.querySelector("#confirmPassword");
 const togglePassword = document.querySelector('.togglePassword');
-
+const btn = document.getElementById('submitbtn');
+ 
 
 
 // Password reveal
-
-
-// let password = document.querySelector('#password1');
-
 togglePassword.addEventListener('click', (e) => {
     
 
@@ -29,7 +26,8 @@ togglePassword.addEventListener('click', (e) => {
   togglePassword.addEventListener('click', (e) => {
     
 
-     // toggle the type attribute for create password
+     // toggle the type attribute for confirm password
+
      const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
      confirmPassword.setAttribute('type', type);
         // toggle the eye / eye slash icon
@@ -38,86 +36,109 @@ togglePassword.addEventListener('click', (e) => {
   
 
 
+  
+ 
+
 // clear default action of submit form
-form.addEventListener('submit', function(e) {
+// form.addEventListener('submit', async function(e) {
 
-    e.preventDefault();
+//     e.preventDefault(); 
 
-    // declare checkinput function
-    checkInput();
+  
 
-});
+// });
+
 
 
 
 // declaring checkinput function
-function checkInput() {
+
+    async function checkInput()  {
 
         const firstnameValue = firstname.value
-        const lastnameValue = lastname.value
-        const phonenumberValue  = number.value
+        const lastNameValue = lastname.value
+        const phoneNumberValue  = phonenumber.value
         const emailValue = email.value
-        const password1Value = password1.value
-        const password2Value = password2.value
+        const passwordValue = password.value
+        const confirmPasswordValue = confirmPassword.value
 
         if(firstnameValue === ''){
 
-            setErrorFor(firstname, 'Name cannot be blank');
+
+            await setErrorFor(firstname, 'Name cannot be blank');
         } else {
 
-            setSuccessFor(firstname);
+            await setSuccessFor(firstname);
+
         }
 
-        if(lastnameValue === ''){
+        if(lastNameValue === ''){
 
-            setErrorFor(lastname, 'Name cannot be blank');
+        await setErrorFor(lastname, 'Name cannot be blank');
         } else {
 
-            setSuccessFor(lastname);
+            await setSuccessFor(lastname);
+
         }
 
-        if(phonenumberValue === ''){
+        if(phoneNumberValue === ''){
 
-            setErrorFor(number, 'Number cannot be blank');
+
+         await setErrorFor(phonenumber, 'Number cannot be blank');
         } else {
 
-            setSuccessFor(number);
+         await setSuccessFor(phonenumber);
         }
 
         if(emailValue === ''){
 
-            setErrorFor(email, 'Email cannot be blank');
-        } else {
 
-            setSuccessFor(email);
+         await setErrorFor(email, 'Email cannot be blank');
+        } else if (
+            /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+              emailValue
+            )
+          ) {
+              await setSuccessFor(email, "Email is not correctly formatted eg example@company.com");
+
+          }  else {
+
+         await setSuccessFor(email);
+
         }
 
-        if(password1Value === ''){
+        if(passwordValue === ''){
 
-            setErrorFor(password1, 'Password cannot be blank');
+
+         await setErrorFor(password, 'Password cannot be blank');
+
         } 
-        else if(password1Value.length <6 ){
+        else if(passwordValue.length <6 ){
 
-            setErrorFor(password1, 'Password is less than 8 characters')
+
+         await setErrorFor(password, 'Password is less than 8 characters')
         } else {
 
-            setSuccessFor(password1);
+         await setSuccessFor(password);
+
         }
 
-        if(password2Value === ''){
+        if(confirmPasswordValue === ''){
 
-            setErrorFor(password2, 'Password cannot be blank');
 
-        } else if(password1Value < password2Value || password1Value !== password2Value){
+         await setErrorFor(comfirmPassword, 'Password cannot be blank');
 
-            setErrorFor(password2, 'Password does not match')
+
+        } else if(passwordValue < confirmPasswordValue || passwordValue !== confirmPasswordValue){
+
+
+         await setErrorFor(confirmPassword, 'Password does not match')
             
         } else {
 
-            setSuccessFor(password2);
-        }
+         await setSuccessFor(confirmPassword);
+        } 
 
-        
         
     };
 
@@ -126,21 +147,99 @@ function checkInput() {
 
     function setErrorFor(input, message){
 
-        const formContainer = input.parentElement;
-        const small = formContainer.querySelector('small');
-        
-        // add error message
-        formContainer.className = 'form-container error';
-        small.innerText = message;
-
-        
-    };
+            const formContainer = input.parentElement;
+            const small = formContainer.querySelector('small');
+            
+            // add error message
+            formContainer.className = 'form-container error';
+            small.innerText = message;  
+        };
 
 
     function setSuccessFor(input){
 
-        const formContainer = input.parentElement;
-        formContainer.className = 'form-container success'
-    }
+            const formContainer = input.parentElement;
+            formContainer.className = 'form-container success'
+        }
 
+
+btn.addEventListener("click", async (e) => {
+    // submit();
+    e.preventDefault();
+      // declare checkinput function
+      checkInput();
+
+    let formData = {};
+    formData.firstname =firstname.value;
+    formData.lastname = lastname.value;
+    formData.email = email.value;
+    formData.phone = phonenumber.value;
+    formData.password = password.value;
+
+    console.log(formData)
+
+
+   await axios({
+
+        method: 'POST',
+        url: 'https://stocka-demo.herokuapp.com/api/v1/auth/register', 
+        
+        data: formData        
+            
+        
+    }) .then( (response)  => {
+
+        Swal.fire(
+            'Congratulations!!!',
+            'Registration succesful!',
+            'success'
+          )
+
+        // console.log(response);
+
+    })
+
+    .catch((error) =>{
+
+        Swal.fire('Oops...', 'User already registered')
+        // console.log(error)
+    })
+
+
+
+  });
+
+  
+// const submit = async (req, res) =>{
+
+//     const query = "https://stocka-demo.herokuapp.com/api/v1/auth/register"
+//     const formData ={};  
+//     formData.firstname = document.querySelector('#firstname').value;
+//     formData.lastname = document.querySelector('#lastname').value;
+//     formData.email = document.querySelector('#email').value;
+//     formData.phone = document.querySelector('#phone').value;
+//     formData.password = document.querySelector('#password').value;
+  
+
+    // console.log(formData)
+
+    
+    // await axios
+    // .post(query, formData)
+    // .then((response) => {
+    //   console.log("list webhook", response.data);
+
+    //   Swal.fire('Congratulations', 'Log in successful', 'success')
+    // })
+    // .catch((error) => {
+    //   // console.log(error);
+    //   Swal.fire('Uh oh!', 'Something went wrong!', 'error')
+    //   res.status(500).json({
+    //     error: error.message,
+    //   });
+    // });
+
+   
+
+// };
 
