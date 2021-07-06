@@ -10,8 +10,6 @@ const togglePassword = document.querySelector('.togglePassword');
 const btn = document.getElementById('submitbtn');
  
 
-btn.disabled = true;
-
 
 // Password reveal
 togglePassword.addEventListener('click', (e) => {
@@ -47,8 +45,9 @@ togglePassword.addEventListener('click', (e) => {
 form.addEventListener('input', async function(e) {
 
     e.preventDefault();
-    checkInput(form.value);
-    disabledBtn();    
+    checkInput();
+  
+       
 
 });
 
@@ -139,10 +138,13 @@ form.addEventListener('input', async function(e) {
 
 
          await setErrorFor(confirmPassword, 'Password does not match')
+
+         
             
         } else {
 
          await setSuccessFor(confirmPassword);
+         
         } 
 
         
@@ -161,6 +163,8 @@ form.addEventListener('input', async function(e) {
             // add error message
             formContainer.className = 'form-container error';
             small.innerText = message;  
+
+            document.getElementById('submitbtn').disabled = true;
                 
           
         };
@@ -169,18 +173,13 @@ form.addEventListener('input', async function(e) {
     function setSuccessFor(input){
             const formContainer = input.parentElement;
             formContainer.className = 'form-container success' 
+
+            document.getElementById('submitbtn').disabled = false;
                      
         };
 
 
-      function disabledBtn(){
-
-            btn.disabled = true;
-
-            if( setErrorFor && setSuccessFor)
-            btn.disabled = false;
-        }
-      
+     
         
     
 
@@ -189,6 +188,9 @@ btn.addEventListener("click", async (e) => {
     e.preventDefault();
       // declare checkinput function
      
+  
+
+    document.getElementById('submitbtn').disabled = false;
 
     let formData = {};
     formData.firstname =firstname.value;
@@ -229,7 +231,7 @@ btn.addEventListener("click", async (e) => {
         Swal.fire('Oops...', error.message, 'error')
         // console.log(error)
     })
-
+      
 
 
   });
