@@ -1,4 +1,5 @@
 // Declare all variables
+
 const form = document.querySelector("#form")
 const firstName = document.getElementById("firstname");
 const lastName = document.getElementById("lastname");
@@ -221,6 +222,8 @@ btn.addEventListener("click", async (e) => {
             'success'
           )
 
+          window.location.replace("sign-in.html")
+
         // console.log(response);
 
     })
@@ -228,7 +231,21 @@ btn.addEventListener("click", async (e) => {
     .catch((error) =>{
 
 
-        Swal.fire('Oops...', error.message, 'error')
+        Swal.fire('Oops...', error.message, response.jason('error'), 'error')
+
+        // if (error.response) {
+        //     // Request made and server responded
+        //     Swal.fire('Opps', error.message, 'error');
+        //   } else if (error.request) {
+        //     // The request was made but no response was received
+        //     Swal.fire('Opps', 'A user with the email already exist', 'error');
+        //   } else {
+        //     // Something happened in setting up the request that triggered an Error
+        //     Swal.fire('Opps', error.message, 'error');
+        //   }
+        
+        
+
         // console.log(error)
     })
       
@@ -269,4 +286,5 @@ btn.addEventListener("click", async (e) => {
    
 
 // };
+
 
