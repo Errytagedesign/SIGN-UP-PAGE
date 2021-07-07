@@ -231,7 +231,7 @@ btn.addEventListener("click", async (e) => {
     .catch((error) =>{
 
 
-        Swal.fire('Oops...', error.message, response.jason('error'), 'error')
+        Swal.fire('Oops...', error.message, 'error')
 
         // if (error.response) {
         //     // Request made and server responded
